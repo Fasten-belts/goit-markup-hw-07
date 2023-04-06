@@ -1,0 +1,121 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .hero-headline {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+  /* section benefit */
+  .benefits {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .benefits > .benefits-list {
+    width: calc((100% - 24px) / 2);
+  }
+  .title {
+    text-align: left;
+  }
+  /* our team */
+  .card-set {
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  /* clients */
+  .section .card-set {
+    column-gap: 24px;
+  }
+
+  .card-set > .customer-list {
+    width: calc((100% - 238px) / 3);
+  }
+
+  .customer-link {
+    width: 168px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  /* ----- HERO ---- */
+  .container {
+    max-width: 1158px;
+  }
+  .hero {
+    padding-bottom: 188px;
+    padding-top: 188px;
+  }
+
+  .hero-headline {
+    margin-bottom: 48px;
+  }
+  /* section benefit */
+  .section.no-padding {
+    padding-bottom: 0;
+  }
+
+  .benefits-image {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #f4f4fd;
+  }
+
+  .benefits {
+    gap: 24px;
+  }
+
+  .benefits > .benefits-list {
+    width: calc((100% - 72px) / 4);
+  }
+  .title.no-padding {
+    padding: 0;
+    padding-top: 8px;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: var(--main-color-headline);
+  }
+  .section-title-text {
+    margin-bottom: 8px;
+  }
+  /* what we are doing */
+  .services {
+    display: flex;
+  }
+  /* our team */
+  .second-section {
+    padding: 120px 0;
+  }
+  .card-set {
+    row-gap: 48px;
+  }
+
+  .card-set > .box-item {
+    width: calc((100% - 72px) / 4);
+  }
+  /* clients */
+  .section {
+    padding: 120px 0;
+  }
+  .card-set > .customer-list {
+    width: calc((100% - 120px) / 6);
+  }
+}

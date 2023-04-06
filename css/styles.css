@@ -62,7 +62,7 @@ body {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -177,8 +177,8 @@ body {
 /*------------ Hero----------- */
 .hero {
   max-width: 1440px;
-  padding-bottom: 188px;
-  padding-top: 188px;
+  padding-bottom: 112px;
+  padding-top: 112px;
   margin-left: auto;
   margin-right: auto;
 
@@ -194,17 +194,17 @@ body {
   text-align: center;
 }
 
-.hero .hero-headline {
-  max-width: 496px;
-  margin-bottom: 48px;
+.hero-headline {
+  max-width: 320px;
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 56px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.02em;
-  line-height: 1.07;
+  line-height: 1.11;
 
   color: var(--second-color-headline);
 }
@@ -323,14 +323,15 @@ body {
 }
 
 /*-------------- 3 Section -------------*/
-.section.no-padding {
-  padding-bottom: 0;
-}
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 
   color: var(--main-color-paragraph);
+}
+
+.services {
+  display: none;
 }
 
 .second-section {
@@ -360,29 +361,32 @@ body {
   color: var(--main-color-headline);
 }
 
-.title.no-padding {
-  padding: 0;
-  padding-top: 8px;
+.person .title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .title {
+  text-align: center;
   margin-bottom: 8px;
-  font-size: 20px;
+  font-size: 36px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.02em;
-  line-height: 1.2;
+  line-height: 1.11;
 
   color: var(--main-color-headline);
 }
 
 .person .section-title-text,
 .project .section-title-text {
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
 }
 .section-title-text {
-  margin-bottom: 8px;
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
@@ -392,31 +396,29 @@ body {
 
 .card-set {
   display: flex;
-  column-gap: 24px;
-  row-gap: 48px;
+  flex-direction: column;
+  row-gap: 72px;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.card-set > .box-item {
-  width: calc((100% - 72px) / 4);
 }
 
 .card-set > .box-image {
   width: calc((100% - 48px) / 3);
 }
 
-.card-set > .customer {
-  width: calc((100% - 120px) / 6);
+.section .card-set {
+  flex-direction: row;
+  column-gap: 16px;
+}
+
+.card-set > .customer-list {
+  width: calc((100% - 16px) / 2);
 }
 /* ====== Benefits ====== */
 .benefits {
   display: flex;
-  gap: 24px;
-}
-
-.benefits > .benefits-list {
-  width: calc((100% - 72px) / 4);
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .benefits-icon {
@@ -425,13 +427,7 @@ body {
 }
 
 .benefits-image {
-  display: flex;
-  width: 264px;
-  height: 112px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  background: #f4f4fd;
+  display: none;
 }
 /*--------------- Our Team --------------*/
 .social-list {
@@ -477,7 +473,6 @@ body {
 }
 .customer-link {
   display: flex;
-  width: 168px;
   height: 88px;
   align-items: center;
   justify-content: center;
