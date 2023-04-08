@@ -2,6 +2,9 @@
   .container {
     max-width: 428px;
   }
+  .customer-link {
+    max-width: 190px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -43,6 +46,11 @@
 
   .customer-link {
     width: 168px;
+  }
+  /* footer */
+
+  .footer-page {
+    flex-direction: row;
   }
 }
 
@@ -117,5 +125,38 @@
   }
   .card-set > .customer-list {
     width: calc((100% - 120px) / 6);
+  }
+
+  /* footer */
+  .footer-logo {
+    margin-right: 120px;
+  }
+  .page-footer .text {
+    max-width: 264px;
+  }
+  .page-footer .logo {
+    text-align: start;
+  }
+  .page-footer .text {
+    text-align: start;
+  }
+  .subscribe-form {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .subscribe {
+    margin-left: 80px;
+    text-align: start;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+
+  .footer-title {
+    margin-top: 0;
+  }
+  .page-footer {
+    padding: 100px 0;
   }
 }
