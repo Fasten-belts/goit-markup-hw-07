@@ -10,6 +10,9 @@
   .backdrop .menu-modal {
     width: 428px;
   }
+  .menu-modal .social-list {
+    gap: 56px;
+  }
   .customer-link {
     max-width: 190px;
   }
@@ -212,6 +215,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
   /* header */
   .page-header {
     padding-bottom: 24px;
@@ -229,9 +235,7 @@
     bottom: -25px;
   }
   /* ----- HERO ---- */
-  .container {
-    max-width: 1158px;
-  }
+
   .hero {
     max-width: 1440px;
     background-image: linear-gradient(
@@ -294,7 +298,8 @@
     color: var(--main-color-headline);
   }
   .section-title-text {
-    margin-bottom: 8px;
+    font-weight: 400;
+    /* margin-bottom: 8px; */
   }
   /* what we are doing */
   .services {
